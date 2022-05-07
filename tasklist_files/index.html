@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <section>
         <!--colocar  ícones nos botões de ação-->
         <h1>Task List</h1>
         <div id="description">
-            <input type="text" name="textDesc" id="textDesc" placeholder="Add task">
-            <button id="btnAdd">New</button>
+            <input type="text" data-index="new" name="textDesc" id="textDesc" placeholder="Add task" required>
+            <button id="btnAdd"><span class="material-icons" title="add new task">post_add</span></button>
         </div>
         <div id="result">
             <ul class="list">
-                <li class="list_item">
+                <!--<li class="list_item">
                     <h3>Teste</h3>
                     <div class="btnEvents">
-                        <button class="btnList" id="edit">Edit</button>
-                        <button class="btnList" id="delete">Delete</button>
+                        <button class="btnList" id="edit"><span class="material-icons" title="edit task">edit</span></button>
+                        <button class="btnList" id="delete"><span class="material-icons" title="delete task">delete</span></button>
                     </div>
-                </li>
+                </li>-->
             </ul>
         </div>
     </section>
